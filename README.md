@@ -1,5 +1,12 @@
-human/api expressjs app
-=======================
+Code Name : Human-NSA
+=========
+This is a webapplication that seeks to enable the physical trainers of tomorrow to improve the health of clients around the world.
+
+  - HumanApi
+  - Humanapi oauth
+  - Node.js
+  - Frontend tba
+
 
 Instructions
 ------------
