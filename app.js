@@ -1,4 +1,4 @@
-var express = require('express')
+var express = require('express');
 var passport = require('passport');
 var util = require('util');
 var HumanApiStrategy = require('passport-humanapi').Strategy;
@@ -8,7 +8,7 @@ var HumanApiStrategy = require('passport-humanapi').Strategy;
 var HUMANAPI_APP_ID     =  "df2131e5321400375f0e12acba05ca99752ada8f";
 var HUMANAPI_APP_SECRET =  "0ad1da70b1e93d6aef56130326f38d2fefaa8b90";
 
-
+var authentication = require("./routes/authentication");
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -83,44 +83,24 @@ app.get('/close', function(req, res){
   res.render('close');
 });
 
+console.log("Authentication: ",  authentication);
+console.log("App before authentication init: ", app.routes);
+authentication.init(app,passport);
+console.log("App after authentication init: ", app.routes);
 
-// GET /auth/humanapi
-//   Use passport.authenticate() as route middleware to authenticate the
-//   request.  The first step in HumanAPI authentication will involve
-//   redirecting the user to humanapi.com.  After authorization, HumanAPI will
-//   redirect the user back to this application at /auth/humanapi/callback
-app.get('/auth/humanapi',
-  passport.authenticate('humanapi'),
-  function(req, res){
-    // The request will be redirected to HumanAPI for authentication, so this
-    // function will not be called.
-  });
 
-// GET /auth/humanapi/callback
-//   Use passport.authenticate() as route middleware to authenticate the
-//   request.  If authentication fails, the user will be redirected back to the
-//   login page.  Otherwise, the primary route function function will be called,
-//   which, in this example, will redirect the user to the home page.
-app.get('/auth/humanapi/callback',
-  passport.authenticate('humanapi', { failureRedirect: '/close' }),
-  function(req, res) {
-    // Call /close if the auth process is opened in a popup
-    res.redirect('/close');
-    // otherwise call the home page etc.
-    // res.redirect('/');
-  });
 
-app.get('/logout', function(req, res){
-  req.logout();
-  res.redirect('/');
-});
 
-app.listen(app.get('port'), function(){
-  console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
-});
+
+// app.listen(app.get('port'), function(){
+//   console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
+// });
 
 function ensureAuthenticated(req, res, next) {
   console.log(req.user)
   if (req.isAuthenticated()) { return next(); }
   res.redirect('/login')
 }
+app.listen(app.get('port'), function(){
+  console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
+});
