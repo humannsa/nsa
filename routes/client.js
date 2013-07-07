@@ -1,1 +1,2 @@
-exports.init = function(app);
+exports.init = function(app){
+};
