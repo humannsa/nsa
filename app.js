@@ -3,12 +3,13 @@ var passport = require('passport');
 var util = require('util');
 var HumanApiStrategy = require('passport-humanapi').Strategy;
 
-
 // Configure the application with you generated App ID and App Secret
 var HUMANAPI_APP_ID     =  "df2131e5321400375f0e12acba05ca99752ada8f";
 var HUMANAPI_APP_SECRET =  "0ad1da70b1e93d6aef56130326f38d2fefaa8b90";
 
 var authentication = require("./routes/authentication");
+var trainer = require("./routes/trainer");
+var client = require("./routes/client");
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -24,7 +25,6 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
-
 
 // Use the HumanApiStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
@@ -53,14 +53,14 @@ passport.use(new HumanApiStrategy({
 
 
 
-
+// Instantiate the application
 var app = express();
 
 // configure Express
 app.configure(function() {
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
-  app.set('view engine', 'ejs');
+  app.set('view engine', 'jade');
   // app.use(express.logger()); //dev environment logger
   app.use(express.cookieParser());
   app.use(express.bodyParser());
@@ -83,24 +83,10 @@ app.get('/close', function(req, res){
   res.render('close');
 });
 
-console.log("Authentication: ",  authentication);
-console.log("App before authentication init: ", app.routes);
-authentication.init(app,passport);
-console.log("App after authentication init: ", app.routes);
+// Initialize Authentication Routes
+// authentication.init(app,passport);
 
-
-
-
-
-// app.listen(app.get('port'), function(){
-//   console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
-// });
-
-function ensureAuthenticated(req, res, next) {
-  console.log(req.user)
-  if (req.isAuthenticated()) { return next(); }
-  res.redirect('/login')
-}
+// Start the app server
 app.listen(app.get('port'), function(){
   console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
 });
