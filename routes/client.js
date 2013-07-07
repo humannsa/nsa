@@ -1,5 +1,5 @@
 exports.init = function(app){
-  app.get("/hello", function(req, res){
-    res.render('client/data', {title:"Client Data"});
+  app.get("/client/data", function(req, res){
+    res.render('data', {title:"Client Data"});
   });
 };
