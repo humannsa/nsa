@@ -1,0 +1,43 @@
+!!! 5
+html(lang='en')
+  include partials/_head
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='/') NSA Portal
+          .nav-collapse
+            ul.nav.pull-right
+              a.brand NOTHING TO SEE HERE
+          //
+             /nav-collapse
+        //
+           /container
+      //
+         /navbar-inner
+    //
+       /navbar
+    #login-container
+      #login-header
+        h3 NSA Portal
+      //
+         /login-header
+      #login-content.clearfix
+        h4 Welcome to NSA, Lets get you setup with your trainer
+        p(style='font-size: 15px;')
+          | We use
+          a(href='http://humanapi.co') human/api
+          | to securely stream health data to your Personal Trainer. It's a really simple process and enables your trainer to better serve you.
+        br
+        span.humanAPIAuthButton(data-target='auth/humanapi', data-window-height='700')
+        script(src='humanAuth.min.js')
+      style
+        /* so the dropdown is visible */
+        .modal { overflow: visible; }
+        .modal-body { overflow-y: visible; }
+      script(src='js/jquery-1.7.2.min.js')
+      script(src='js/bootstrap.js')
