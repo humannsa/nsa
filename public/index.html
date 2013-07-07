@@ -13,11 +13,10 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script type="text/javascript" src
-    ="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-  <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+    <script src="js/lodash.js"></script>
     <script src="js/main.js"></script>
     <!--[if lt IE 9]>
       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -41,28 +40,46 @@
           <h2 class="module-title">Activity</h2>
           <div id="bar-chart"  class="bar-chart"></div>
         </div>
+        </div><!-- /.module -->
+
         <div class="module half">
           <h2 class="module-title">Sleep</h2>
           <div id="line-chart"  class="line-chart"></div>
         </div>
-        <div class="module half">
+        <div class="module full">
           <h2 class="module-title">Nutrition</h2>
           <script src="json/meals.json" type="text/javascript"></script>
           <script src="json/heart_rate.json" type="text/javascript"></script>
           <script src="json/activity.json" type="text/javascript"></script>
           <script src="json/sleep.json" type="text/javascript"></script>
+          <script>
+          $(document).ready(function(){
+            // Set up recent meals
+            window.recent_meals = [];
+            recent_meals.push({ photo: meals[3].photo, proud: meals[3].proud });
+            recent_meals.push({ photo: meals[6].photo, proud: meals[6].proud });
+            recent_meals.push({ photo: meals[10].photo, proud: meals[10].proud });
+            recent_meals.push({ photo: meals[14].photo, proud: meals[14].proud });
+            recent_meals.push({ photo: meals[21].photo, proud: meals[21].proud });
+            recent_meals.push({ photo: meals[23].photo, proud: meals[23].proud });
 
+            mealList = $("#meal-list");
+            _.each(recent_meals, function(meal) {
+              mealList.append("<li class='meal'> <a href='"+meal.photo+"' target='_blank'><img src='"+meal.photo+"' class='meal-photo' /></a></li>");
+            });
+          });
+          </script>
 
+          <ul id="meal-list" class="meal-list">
+          </ul>
 
+        </div><!-- /.module -->
+      </div><!-- /.wrap -->
+    </div><!-- /.dashboard-content -->
 
-
-
-
-
-        </div>
-      </div>
-
-    </div>
-
+    <script src="json/meals.json" type="text/javascript"></script>
+    <script src="json/heart_rate.json" type="text/javascript"></script>
+    <script src="json/activity.json" type="text/javascript"></script>
+    <script src="json/sleep.json" type="text/javascript"></script>
   </body>
 </html>

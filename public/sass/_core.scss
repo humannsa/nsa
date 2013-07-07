@@ -218,3 +218,25 @@ a {
   font-weight: 300;
   margin: .4em 0 0 1em;
 }
+
+.meal-list {
+  margin:0; padding:0; list-style:none;
+}
+
+.meal {
+  display: block;
+  float:left;
+  width:14%;
+  margin-right:1%;
+  background-color:darken(#4D595E, 10%);
+  margin-bottom: 1%;
+  border-radius:3px;
+}
+
+.meal-photo {
+  width:100%;
+  display:block;
+  border:1px solid darken(#4D595E, 15%);
+  border-radius:3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3)
+}
