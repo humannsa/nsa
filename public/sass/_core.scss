@@ -137,6 +137,11 @@ a {
   right: 2em;
 }
 
+.subtle-button {
+  border-color:darken(#4D595E, 18%);
+  color:darken(#4D595E, 18%);
+}
+
 .avatar {
   display:inline-block;
   width:50px;
