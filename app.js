@@ -86,6 +86,7 @@ app.get('/close', function(req, res){
 
 // Initialize Authentication Routes
 authentication.init(app,passport);
+
 util.init(app);
 client.init(app);
 trainer.init(app);
