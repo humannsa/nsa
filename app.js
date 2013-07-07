@@ -85,8 +85,8 @@ app.get('/close', function(req, res){
 
 // Initialize Authentication Routes
 authentication.init(app,passport);
-client.init(app)
-trainer.init(app)
+client.init(app);
+trainer.init(app);
 // Start the app server
 app.listen(app.get('port'), function(){
   console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
