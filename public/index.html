@@ -62,7 +62,7 @@
 
             mealList = $("#meal-list");
             _.each(recent_meals, function(meal) {
-              mealList.append("<li class='meal'> <img src='"+meal.photo+"' class='meal-photo' /> </li>");
+              mealList.append("<li class='meal'> <a href='"+meal.photo+"' target='_blank'><img src='"+meal.photo+"' class='meal-photo' /></a></li>");
             });
           });
           </script>
