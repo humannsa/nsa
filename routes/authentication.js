@@ -1,3 +1,9 @@
+var credentials = {
+  email: "marothstein@gmail.com",
+  password: "p@ssw0rd"
+};
+
+
 
 function ensureAuthenticated(req, res, next) {
   console.log(req.user);
@@ -6,6 +12,11 @@ function ensureAuthenticated(req, res, next) {
 }
 
 function authenticateUser(req) {
+
+  var email = req.params('email', null);
+  var password = req.params('password', null);
+
+
 
 }
 

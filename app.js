@@ -10,6 +10,7 @@ var HUMANAPI_APP_SECRET =  "0ad1da70b1e93d6aef56130326f38d2fefaa8b90";
 var authentication = require("./routes/authentication");
 var trainer = require("./routes/trainer");
 var client = require("./routes/client");
+var util = require("./routes/util");
 
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
@@ -85,8 +86,12 @@ app.get('/close', function(req, res){
 
 // Initialize Authentication Routes
 authentication.init(app,passport);
-client.init(app)
-trainer.init(app)
+util.init(app);
+client.init(app);
+trainer.init(app);
+
+console.log("app.routes: ", app.routes);
+
 // Start the app server
 app.listen(app.get('port'), function(){
   console.log("[NSA APP ACTIVATED] Express server listening on port " + app.get('port'));
