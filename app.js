@@ -84,7 +84,7 @@ app.get('/close', function(req, res){
 });
 
 // Initialize Authentication Routes
-// authentication.init(app,passport);
+authentication.init(app,passport);
 
 // Start the app server
 app.listen(app.get('port'), function(){
