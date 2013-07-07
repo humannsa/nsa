@@ -11,9 +11,10 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="css/styles.css">
-    
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>    
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/lodash.js"></script>
     <script src="js/main.js"></script>
     <!--[if lt IE 9]>
       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -22,8 +23,8 @@
   <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]--> 
-    
+    <![endif]-->
+
     <div class="header">
       <a href="clients.html" class="nav-button back-button">&larr; All Clients</a>
       <div class="client-header">
@@ -45,13 +46,27 @@
           <script src="json/heart_rate.json" type="text/javascript"></script>
           <script src="json/activity.json" type="text/javascript"></script>
           <script src="json/sleep.json" type="text/javascript"></script>
-          
-          
-          
-          
-          
-          
-          
+
+
+          <script>
+          $(document).ready(function(){
+            // Set up recent meals
+            window.recent_meals = [];
+            recent_meals.push({ photo: meals[0].photo, proud: meals[0].proud });
+            recent_meals.push({ photo: meals[1].photo, proud: meals[1].proud });
+            recent_meals.push({ photo: meals[2].photo, proud: meals[2].proud });
+            recent_meals.push({ photo: meals[3].photo, proud: meals[3].proud });
+            recent_meals.push({ photo: meals[4].photo, proud: meals[4].proud });
+            recent_meals.push({ photo: meals[5].photo, proud: meals[5].proud });
+          });
+          </script>
+
+
+
+
+
+
+
 
         </div>
       </div>
