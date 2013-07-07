@@ -142,6 +142,10 @@ a {
   color:darken(#4D595E, 18%);
 }
 
+.mod-button {
+
+}
+
 .avatar {
   display:inline-block;
   width:50px;
@@ -179,6 +183,7 @@ a {
   margin:2em 0;
   box-sizing: border-box;
   padding:1em;
+  position:relative;
 }
 
 .client-list {
