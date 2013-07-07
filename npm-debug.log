@@ -1,0 +1,273 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.5/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'TeeChart' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.5
+4 verbose read json /Users/Jupitor/Desktop/nsa/package.json
+5 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/ChartTime/package.json
+6 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/ejs/package.json
+7 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/express/package.json
+8 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/jade/package.json
+9 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/node-highcharts/package.json
+10 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/passport/package.json
+11 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/passport-humanapi/package.json
+12 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/passport-oauth/package.json
+13 verbose from cache /Users/Jupitor/Desktop/nsa/package.json
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'TeeChart', null ]
+16 verbose cache add name=undefined spec="TeeChart" args=["TeeChart",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'TeeChart',
+17 verbose parsed url   path: 'TeeChart',
+17 verbose parsed url   href: 'TeeChart' }
+18 silly lockFile 7de98f76-TeeChart TeeChart
+19 verbose lock TeeChart /Users/Jupitor/.npm/7de98f76-TeeChart.lock
+20 silly lockFile 7de98f76-TeeChart TeeChart
+21 silly lockFile 7de98f76-TeeChart TeeChart
+22 verbose addNamed [ 'TeeChart', '' ]
+23 verbose addNamed [ null, '' ]
+24 silly lockFile 2aecb99a-TeeChart TeeChart@
+25 verbose lock TeeChart@ /Users/Jupitor/.npm/2aecb99a-TeeChart.lock
+26 silly addNameRange { name: 'TeeChart', range: '', hasData: false }
+27 verbose url raw TeeChart
+28 verbose url resolving [ 'https://registry.npmjs.org/', './TeeChart' ]
+29 verbose url resolved https://registry.npmjs.org/TeeChart
+30 info trying registry request attempt 1 at 11:07:37
+31 http GET https://registry.npmjs.org/TeeChart
+32 http 200 https://registry.npmjs.org/TeeChart
+33 silly registry.get cb [ 200,
+33 silly registry.get   { vary: 'Accept',
+33 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+33 silly registry.get     etag: '"D02MECGBI8K8DSMF1D94VVTU"',
+33 silly registry.get     date: 'Sun, 07 Jul 2013 18:07:31 GMT',
+33 silly registry.get     'content-type': 'application/json',
+33 silly registry.get     'content-length': '5033' } ]
+34 silly addNameRange number 2 { name: 'TeeChart', range: '', hasData: true }
+35 silly addNameRange versions [ 'TeeChart', [ '0.0.1', '0.1.3' ] ]
+36 verbose addNamed [ 'TeeChart', '0.1.3' ]
+37 verbose addNamed [ '0.1.3', '0.1.3' ]
+38 silly lockFile aa979bf5-TeeChart-0-1-3 TeeChart@0.1.3
+39 verbose lock TeeChart@0.1.3 /Users/Jupitor/.npm/aa979bf5-TeeChart-0-1-3.lock
+40 silly lockFile fbc4ecf5--org-TeeChart-TeeChart-0-1-3-tgz https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz
+41 verbose lock https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz /Users/Jupitor/.npm/fbc4ecf5--org-TeeChart-TeeChart-0-1-3-tgz.lock
+42 verbose addRemoteTarball [ 'https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz',
+42 verbose addRemoteTarball   'c0592fc5f95bd411cf7c071b27373e7d80fe32cd' ]
+43 info retry fetch attempt 1 at 11:07:37
+44 verbose fetch to= /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz
+45 http GET https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz
+46 http 200 https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz
+47 silly shasum updated bytes 5977
+48 info shasum c0592fc5f95bd411cf7c071b27373e7d80fe32cd
+48 info shasum /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz
+49 verbose tar unpack /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz
+50 silly lockFile f5ccff6b-57980-0-5916190335992724-package /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+51 verbose lock /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package /Users/Jupitor/.npm/f5ccff6b-57980-0-5916190335992724-package.lock
+52 silly lockFile 25c22413-57980-0-5916190335992724-tmp-tgz /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz
+53 verbose lock /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz /Users/Jupitor/.npm/25c22413-57980-0-5916190335992724-tmp-tgz.lock
+54 silly gunzTarPerm modes [ '755', '644' ]
+55 silly gunzTarPerm extractEntry package.json
+56 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+57 silly gunzTarPerm extractEntry README
+58 silly gunzTarPerm modified mode [ 'README', 438, 420 ]
+59 silly gunzTarPerm extractEntry main.js
+60 silly gunzTarPerm modified mode [ 'main.js', 438, 420 ]
+61 silly gunzTarPerm extractEntry install_node_canvas.txt
+62 silly gunzTarPerm modified mode [ 'install_node_canvas.txt', 438, 420 ]
+63 silly gunzTarPerm extractEntry license.txt
+64 silly gunzTarPerm modified mode [ 'license.txt', 438, 420 ]
+65 silly gunzTarPerm extractEntry package.~json
+66 silly gunzTarPerm modified mode [ 'package.~json', 438, 420 ]
+67 verbose read json /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package/package.json
+68 silly lockFile f5ccff6b-57980-0-5916190335992724-package /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+69 silly lockFile f5ccff6b-57980-0-5916190335992724-package /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+70 silly lockFile 25c22413-57980-0-5916190335992724-tmp-tgz /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz
+71 silly lockFile 25c22413-57980-0-5916190335992724-tmp-tgz /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/tmp.tgz
+72 verbose from cache /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package/package.json
+73 verbose tar pack [ '/Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz',
+73 verbose tar pack   '/var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package' ]
+74 verbose tarball /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+75 verbose folder /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+76 silly lockFile f5ccff6b-57980-0-5916190335992724-package /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+77 verbose lock /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package /Users/Jupitor/.npm/f5ccff6b-57980-0-5916190335992724-package.lock
+78 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+79 verbose lock /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz /Users/Jupitor/.npm/38b429b4-r-npm-TeeChart-0-1-3-package-tgz.lock
+80 silly lockFile f5ccff6b-57980-0-5916190335992724-package /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+81 silly lockFile f5ccff6b-57980-0-5916190335992724-package /var/folders/38/k7zshrlj1f5g2k_lqq5rf0300000gq/T/npm-83617/1373220457980-0.5916190335992724/package
+82 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+83 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+84 silly lockFile 1512b06c-pitor-npm-TeeChart-0-1-3-package /Users/Jupitor/.npm/TeeChart/0.1.3/package
+85 verbose lock /Users/Jupitor/.npm/TeeChart/0.1.3/package /Users/Jupitor/.npm/1512b06c-pitor-npm-TeeChart-0-1-3-package.lock
+86 silly lockFile 1512b06c-pitor-npm-TeeChart-0-1-3-package /Users/Jupitor/.npm/TeeChart/0.1.3/package
+87 silly lockFile 1512b06c-pitor-npm-TeeChart-0-1-3-package /Users/Jupitor/.npm/TeeChart/0.1.3/package
+88 verbose tar unpack /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+89 silly lockFile 1512b06c-pitor-npm-TeeChart-0-1-3-package /Users/Jupitor/.npm/TeeChart/0.1.3/package
+90 verbose lock /Users/Jupitor/.npm/TeeChart/0.1.3/package /Users/Jupitor/.npm/1512b06c-pitor-npm-TeeChart-0-1-3-package.lock
+91 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+92 verbose lock /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz /Users/Jupitor/.npm/38b429b4-r-npm-TeeChart-0-1-3-package-tgz.lock
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm extractEntry README
+96 silly gunzTarPerm extractEntry main.js
+97 silly gunzTarPerm extractEntry install_node_canvas.txt
+98 silly gunzTarPerm extractEntry license.txt
+99 silly gunzTarPerm extractEntry package.~json
+100 verbose read json /Users/Jupitor/.npm/TeeChart/0.1.3/package/package.json
+101 silly lockFile 1512b06c-pitor-npm-TeeChart-0-1-3-package /Users/Jupitor/.npm/TeeChart/0.1.3/package
+102 silly lockFile 1512b06c-pitor-npm-TeeChart-0-1-3-package /Users/Jupitor/.npm/TeeChart/0.1.3/package
+103 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+104 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+105 silly shasum updated bytes 5989
+106 info shasum 67bcefc8c384bb9211e9c6e1965ad95a3b793a06
+106 info shasum /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+107 verbose from cache /Users/Jupitor/.npm/TeeChart/0.1.3/package/package.json
+108 verbose chmod /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz 644
+109 verbose chown /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz [ 503, 20 ]
+110 silly lockFile fbc4ecf5--org-TeeChart-TeeChart-0-1-3-tgz https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz
+111 silly lockFile fbc4ecf5--org-TeeChart-TeeChart-0-1-3-tgz https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz
+112 silly lockFile aa979bf5-TeeChart-0-1-3 TeeChart@0.1.3
+113 silly lockFile aa979bf5-TeeChart-0-1-3 TeeChart@0.1.3
+114 silly lockFile 2aecb99a-TeeChart TeeChart@
+115 silly lockFile 2aecb99a-TeeChart TeeChart@
+116 silly resolved [ { author:
+116 silly resolved      { name: 'David Berneda',
+116 silly resolved        email: 'david@steema.com',
+116 silly resolved        url: 'http://www.steema.com' },
+116 silly resolved     name: 'TeeChart',
+116 silly resolved     description: 'Charting and graphing node.js module',
+116 silly resolved     tags: [ 'html5', 'canvas', 'chart', 'graph', 'plot', 'visualization' ],
+116 silly resolved     version: '0.1.3',
+116 silly resolved     keywords:
+116 silly resolved      [ 'canvas',
+116 silly resolved        'w3c',
+116 silly resolved        'html5',
+116 silly resolved        'chart',
+116 silly resolved        'plot',
+116 silly resolved        'graph',
+116 silly resolved        'charting',
+116 silly resolved        '2d',
+116 silly resolved        'javascript' ],
+116 silly resolved     homepage: 'http://www.steema.com/teechart/html5',
+116 silly resolved     repository: { url: 'TeeChart' },
+116 silly resolved     maintainers: [ [Object] ],
+116 silly resolved     bugs:
+116 silly resolved      { email: 'david@steema.com',
+116 silly resolved        url: 'http://github.com/davidberneda/TeeChart/issues' },
+116 silly resolved     licenses: [ [Object] ],
+116 silly resolved     main: './main',
+116 silly resolved     scripts: { test: 'node main.js' },
+116 silly resolved     dependencies: { 'node-canvas': '0.13.x' },
+116 silly resolved     devDependencies: {},
+116 silly resolved     optionalDependencies: {},
+116 silly resolved     engines: { node: '*' },
+116 silly resolved     readme: 'TeeChart module for Node.js\r\nSteema Software www.steema.com\r\n==============================\r\n\r\nCharting module using TeeChart for JavaScript.\r\nFree for non-commercial use. See license.txt.\r\n\r\nFor TeeChart Javascript demos, documentation, support:\r\n\r\nhttp://www.steema.com/teechart/html5/\r\n\r\nDependencies:\r\n-------------\r\n\r\nTo create and render a chart picture at server-side,\r\nan HTML5 <canvas> node library is required.\r\n\r\nTeeChart has been tested on Linux using node.js and\r\nnode-canvas module.\r\n\r\n\r\nInstallation:\r\n-------------\r\n\r\n-Install node.js:\r\n http://nodejs.org\r\n\r\n-Install node-canvas module:\r\n http://github.com/LearnBoost/node-canvas\r\n\r\n\r\nRunning included example:\r\n-------------------------\r\n\r\n# node main.js\r\n\r\nThis small javascript code will accept requests via web to\r\nreturn an image/png sample chart:\r\n\r\nhttp://127.0.0.1:4242\r\n\r\n\r\nNotes:\r\n------\r\n\r\nThe important bits of code are:\r\n\r\n1) Using TeeChart and node-canvas modules:\r\n\r\n  var tee=require(\'./lib/teechart-min.js\'),\r\n      Canvas=require(\'./node-canvas/lib/canvas.js\');\r\n\r\n2) Creating a Tee.Chart, passing the canvas:\r\n\r\n  var canvas = new Canvas(500,300),\r\n      chart = new tee.Tee.Chart(canvas);\r\n\r\n3) Manually specifying chart size (this step should not\r\n   be mandatory in future releases) :\r\n\r\n     chart.bounds.set(0,0,500,300);\r\n\r\n4) Add chart series, data, change formatting, etc, and DRAW:\r\n\r\n  chart.title.text="Node.js and TeeChart";\r\n  chart.addSeries(new tee.Tee.Bar([5,3,7,1,2]));\r\n  chart.draw();\r\n\r\n5) Return the chart as image, or save it to a file, etc\r\n   (Check node-canvas documentation for more options)\r\n\r\n  res.writeHead(200, {\'Content-Type\': \'text/html\'});\r\n  res.end("<html><body><img src=\'"+canvas.toDataURL()+"\'/></body></html>");\r\n\r\n\r\n',
+116 silly resolved     readmeFilename: 'README',
+116 silly resolved     _id: 'TeeChart@0.1.3',
+116 silly resolved     dist: { shasum: '67bcefc8c384bb9211e9c6e1965ad95a3b793a06' },
+116 silly resolved     _from: 'TeeChart@',
+116 silly resolved     _resolved: 'https://registry.npmjs.org/TeeChart/-/TeeChart-0.1.3.tgz' } ]
+117 info install TeeChart@0.1.3 into /Users/Jupitor/Desktop/nsa
+118 info installOne TeeChart@0.1.3
+119 verbose from cache /Users/Jupitor/.npm/TeeChart/0.1.3/package/package.json
+120 info /Users/Jupitor/Desktop/nsa/node_modules/TeeChart unbuild
+121 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/TeeChart/package.json
+122 verbose tar unpack /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+123 silly lockFile b63393e7-esktop-nsa-node-modules-TeeChart /Users/Jupitor/Desktop/nsa/node_modules/TeeChart
+124 verbose lock /Users/Jupitor/Desktop/nsa/node_modules/TeeChart /Users/Jupitor/.npm/b63393e7-esktop-nsa-node-modules-TeeChart.lock
+125 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+126 verbose lock /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz /Users/Jupitor/.npm/38b429b4-r-npm-TeeChart-0-1-3-package-tgz.lock
+127 silly gunzTarPerm modes [ '755', '644' ]
+128 silly gunzTarPerm extractEntry package.json
+129 silly gunzTarPerm extractEntry README
+130 silly gunzTarPerm extractEntry main.js
+131 silly gunzTarPerm extractEntry install_node_canvas.txt
+132 silly gunzTarPerm extractEntry license.txt
+133 silly gunzTarPerm extractEntry package.~json
+134 verbose read json /Users/Jupitor/Desktop/nsa/node_modules/TeeChart/package.json
+135 silly lockFile b63393e7-esktop-nsa-node-modules-TeeChart /Users/Jupitor/Desktop/nsa/node_modules/TeeChart
+136 silly lockFile b63393e7-esktop-nsa-node-modules-TeeChart /Users/Jupitor/Desktop/nsa/node_modules/TeeChart
+137 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+138 silly lockFile 38b429b4-r-npm-TeeChart-0-1-3-package-tgz /Users/Jupitor/.npm/TeeChart/0.1.3/package.tgz
+139 info preinstall TeeChart@0.1.3
+140 verbose from cache /Users/Jupitor/Desktop/nsa/node_modules/TeeChart/package.json
+141 verbose readDependencies using package.json deps
+142 verbose from cache /Users/Jupitor/Desktop/nsa/node_modules/TeeChart/package.json
+143 verbose readDependencies using package.json deps
+144 verbose cache add [ 'node-canvas@0.13.x', null ]
+145 verbose cache add name=undefined spec="node-canvas@0.13.x" args=["node-canvas@0.13.x",null]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: 'node-canvas@0.13.x',
+146 verbose parsed url   path: 'node-canvas@0.13.x',
+146 verbose parsed url   href: 'node-canvas@0.13.x' }
+147 verbose cache add name="node-canvas" spec="0.13.x" args=["node-canvas","0.13.x"]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: '0.13.x',
+148 verbose parsed url   path: '0.13.x',
+148 verbose parsed url   href: '0.13.x' }
+149 verbose addNamed [ 'node-canvas', '0.13.x' ]
+150 verbose addNamed [ null, '>=0.13.0- <0.14.0-' ]
+151 silly lockFile b931c4d7-node-canvas-0-13-x node-canvas@0.13.x
+152 verbose lock node-canvas@0.13.x /Users/Jupitor/.npm/b931c4d7-node-canvas-0-13-x.lock
+153 silly addNameRange { name: 'node-canvas',
+153 silly addNameRange   range: '>=0.13.0- <0.14.0-',
+153 silly addNameRange   hasData: false }
+154 verbose url raw node-canvas
+155 verbose url resolving [ 'https://registry.npmjs.org/', './node-canvas' ]
+156 verbose url resolved https://registry.npmjs.org/node-canvas
+157 info trying registry request attempt 1 at 11:07:39
+158 http GET https://registry.npmjs.org/node-canvas
+159 http 404 https://registry.npmjs.org/node-canvas
+160 silly registry.get cb [ 404,
+160 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+160 silly registry.get     date: 'Sun, 07 Jul 2013 18:07:33 GMT',
+160 silly registry.get     'content-type': 'application/json',
+160 silly registry.get     'content-length': '52',
+160 silly registry.get     'cache-control': 'must-revalidate' } ]
+161 silly lockFile b931c4d7-node-canvas-0-13-x node-canvas@0.13.x
+162 silly lockFile b931c4d7-node-canvas-0-13-x node-canvas@0.13.x
+163 verbose about to build /Users/Jupitor/Desktop/nsa/node_modules/TeeChart
+164 info /Users/Jupitor/Desktop/nsa/node_modules/TeeChart unbuild
+165 verbose from cache /Users/Jupitor/Desktop/nsa/node_modules/TeeChart/package.json
+166 info preuninstall TeeChart@0.1.3
+167 info uninstall TeeChart@0.1.3
+168 verbose true,/Users/Jupitor/Desktop/nsa/node_modules,/Users/Jupitor/Desktop/nsa/node_modules unbuild TeeChart@0.1.3
+169 info postuninstall TeeChart@0.1.3
+170 error 404 'node-canvas' is not in the npm registry.
+170 error 404 You should bug the author to publish it
+170 error 404
+170 error 404 Maybe try 'npm search canvas'
+170 error 404
+170 error 404 Note that you can also install from a
+170 error 404 tarball, folder, or http url, or git url.
+171 error System Darwin 12.4.0
+172 error command "/usr/local/Cellar/node/0.10.5/bin/node" "/usr/local/bin/npm" "install" "TeeChart"
+173 error cwd /Users/Jupitor/Desktop/nsa
+174 error node -v v0.10.5
+175 error npm -v 1.2.18
+176 error code E404
+177 verbose exit [ 1, true ]
