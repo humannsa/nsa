@@ -250,3 +250,9 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
